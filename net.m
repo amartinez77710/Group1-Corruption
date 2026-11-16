@@ -66,5 +66,11 @@ yline(0, 'k-');
 
 grid on;
 
+% --- EXPORT TO CSV FOR STREAMLIT ---
+% Write out table including row names
+writetable(T, 'financial_data.csv', 'WriteRowNames', true);
+disp('Financial data table exported to financial_data.csv successfully.');
+
+
 
 
